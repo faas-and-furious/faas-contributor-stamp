@@ -1,3 +1,5 @@
+This uses ImageMagick, [docs here](http://www.imagemagick.org/Usage/annotating/#wmark_image)
+
 Example:
 
 ```
