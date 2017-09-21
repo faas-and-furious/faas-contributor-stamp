@@ -11,7 +11,7 @@ Setup OpenFaaS including the CLI via:
 Deploy via YAML:
 
 ```
-$ faas-cli deploy -f stack.yml"
+$ faas-cli deploy -f stack.yml
 ```
 
 Or via parameters:
