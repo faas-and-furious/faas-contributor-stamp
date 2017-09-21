@@ -6,5 +6,9 @@ functions:
   faas-stamp:
     lang: Dockerfile
     handler: ./function
-    image: alexellis2/faas-stamp:0.2
+    image: alexellis2/faas-stamp:0.3
+  polaroid:
+    lang: Dockerfile
+    handler: ./polaroid
+    image: alexellis2/faas-polaroid:0.1
 

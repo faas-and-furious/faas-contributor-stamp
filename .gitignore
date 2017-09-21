@@ -2,3 +2,4 @@ template
 *.zip
 build
 *.jpg
+*.png
