@@ -1,0 +1,10 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  faas-stamp:
+    lang: Dockerfile
+    handler: ./function
+    image: alexellis2/faas-stamp:0.2
+

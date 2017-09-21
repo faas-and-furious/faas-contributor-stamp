@@ -2,9 +2,9 @@
 cat - > input.jpg
 export caption="I make OpenFaaS happen"
 
-if [ ! -z $Http_X_Caption ] ;
+if [ ! -z "${Http_X_Caption}" ] ;
 then
-        caption=$Http_X_Caption
+        caption="${Http_X_Caption}"
 fi
 
 width=`identify -format %w input.jpg`; \

@@ -1,0 +1,4 @@
+template
+*.zip
+build
+*.jpg
