@@ -1,11 +1,10 @@
 #!/bin/sh
-cat - > input.jpg
-export caption="I make OpenFaaS happen"
 
-if [ ! -z "${Http_X_Caption}" ] ;
-then
-        caption="${Http_X_Caption}"
-fi
+now=$(date +%s%N)
 
-convert input.jpg -bordercolor snow -background black +polaroid \
+cat - > /tmp/$now_input.jpg
+
+convert /tmp/$now_input.jpg -bordercolor snow -background black +polaroid \
 fd:1
+
+rm -rf /tmp/$now_input.jpg
